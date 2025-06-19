@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unidad Educativa Cristóbal Colón</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<header>
+  <div class="encabezado-contenido">
+    <header>
+  <div class="encabezado-contenido">
+    <img src="escudo.png" alt="Escudo institucional" class="logo">
+    <h1 class="titulo-principal">Unidad Educativa Cristóbal Colón</h1>
+  </div>
+  <nav> <!-- menú de navegación --> </nav>
+</header>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="https://ueccolon.web.app/" target="_blank">Calificaciones</a></li>
+       <li><a href="https://scratch.mit.edu/projects/1188749296" target="_blank">Recursos</a></li>
+    </ul>
+    <p>
+  🔗 Síguenos en <a href="https://www.facebook.com/crisitobalcolonsede3/?locale=es_LA" target="_blank">Facebook Oficial</a>
+</p>
+<section id="inicio" class="bienvenida">
+  <div class="fondo-inicio">
+    <div class="contenido-superpuesto">
+      <h2>Bienvenidos</h2>
+      <p>Formando estudiantes con valores, conocimiento y liderazgo para transformar el mundo.</p>
+    </div>
+  </div>
+</section>
+
+  </nav>
+</header>
+
+  
+<section id="nosotros" class="mision-vision">
+  <h2>MISIÓN Y VISIÓN INSTITUCIONAL</h2>
+
+  <div class="bloque">
+    <h3>MISIÓN</h3>
+    <p>
+      Somos una institución Educativa, que brinda una educación integral e inclusiva de calidad y 
+      calidez, con profesionales en constante capacitación que orientan a nuestros niños y jóvenes, 
+      a través de la investigación, la tecnología, innovación y deporte para ser constructores de sus
+       propios aprendizajes significativos, con principios, valores éticos, morales, respetuosos del 
+       espacio natural, entregando a la sociedad seres humanos que buscan la sana convivencia y el 
+       compromiso en el desarrollo y mejoramiento de su proyecto de vida.
+    </p>
+  </div>
+
+  <div class="bloque">
+    <h3>VISIÓN</h3>
+    <p>
+      La unidad educativa “Cristóbal Colón”, será en el año 2028 una institución con niveles 
+      de excelencia académica en Educación Inicial, Educación General Básica, 
+      Bachillerato Técnico en Informática; una institución líder
+       en formar seres humanos con actitud positiva, íntegra, crítica, innovadora y competente, 
+       pioneros en el uso de la tecnología en el proceso de enseñanza
+        aprendizaje, involucrados con responsabilidad mediante
+        procesos claramente definidos en la investigación, tecnología, 
+        innovación, deporte que satisfagan una educación integral centrada en el sujeto que será capaz de generar 
+        soluciones a sus conflictos y convivir en un clima de paz.
+    </p>
+  </div>
+</section>
+<body>
+  <header>
+    <img src="buho.png" alt="Escudo institucional" class="logo">
+    <h1>Unidad Educativa Cristóbal Colón</h1>
+    <nav>
+
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="galeria" class="galeria">
+  <h2>Galería Institucional</h2>
+  <div class="imagenes">
+    <img src="foto.png" alt="Actividad institucional" onclick="mostrarLightbox(this.src)">
+    <img src="foto1.png" alt="Actividad institucional" onclick="mostrarLightbox(this.src)">
+    <img src="foto2.png" alt="Actividad institucional" onclick="mostrarLightbox(this.src)">
+    <img src="foto3.png" alt="Actividad institucional" onclick="mostrarLightbox(this.src)">
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <img id="lightbox-img" src="" alt="Imagen ampliada">
+  </div>
+
+</section>
+  <footer id="contacto">
+    <p>📍 Dirección: Maldonado y Ayacucho Tulcán</p>
+    <p>📞 Teléfono: +593 99 198 1279</p>
+    <p>✉️ Email: uecristobalc@gmail.com</p>
+    <p>© 2025 Unidad Educativa Cristóbal Colón</p>
+  </footer>
+<script>
+  function mostrarLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    img.src = src;
+    lightbox.style.display = 'flex';
+  }
+
+  function cerrarLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+  
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
